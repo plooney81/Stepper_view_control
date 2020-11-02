@@ -19,8 +19,6 @@ class MyStepper extends Component{
 
     handleNewInput = (event) => {
         let currentNumber = this.state.number;
-        
-        console.log(typeof parseInt(event.target.value, 10), parseInt(event.target.value, 10))
        this.setState({number: event.target.name === 'displayNumber' && isNaN(parseInt(event.target.value, 10)) ? currentNumber : parseInt(event.target.value, 10)})  
     }
     empty = (event) => {
